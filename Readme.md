@@ -22,3 +22,7 @@ Todo: add refs for following topics (Each below topic will be a separated topic)
 7. debugging & profiling
 
 8. ci/cd & monitoring
+
+
+# others
+A great collection of cheat sheet: https://quickref.me/
