@@ -1,0 +1,1 @@
+alias dup='~/dup.sh $1 $2'
