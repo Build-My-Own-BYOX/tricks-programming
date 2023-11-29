@@ -1,13 +1,13 @@
 # Environment > Tricks
 
-1. Create an .env sample file from .env file
+## Create an .env sample file from .env file
 - Use command in linux and macos
     ```
     sed 's/=.*/=/' .env > .env.example
     ```
 - Reference: https://github.com/motdotla/dotenv/issues/119#issuecomment-172914309
 
-2. Get new value of Environment Variables immediately for Windows
+## Get new value of Environment Variables immediately for Windows
 - Reason: when setting new environment variables/path, the current terminal will not know if there were new changes to update new values
 - Solution: 
     - Quickiest solution: create new terminal session. The new session will obtain new values
