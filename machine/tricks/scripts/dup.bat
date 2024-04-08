@@ -6,7 +6,7 @@
 @REM > 123
 @REM > 123
 @REM note: do not enclose {command} with quotes
-@REM ref: https://stackoverflow.com/a/26732879/23209096
+@REM ref: processing all arguments but first in Windows batch script: https://stackoverflow.com/a/26732879/23209096
 
 @echo off
 for /f "tokens=1,* delims= " %%a in ("%*") do set ALL_BUT_FIRST=%%b
