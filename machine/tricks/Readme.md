@@ -41,5 +41,17 @@
     ```
     Then, compile it with `source <profile_file>`, and now we're free to call `dup 3 'echo 123'`
 
+- For Windows, the same function can be done with:
+
+    ```
+    @echo off
+    for /f "tokens=1,* delims= " %%a in ("%*") do set ALL_BUT_FIRST=%%b
+
+    for /l %%i in (1,1,%1) do (
+        call %ALL_BUT_FIRST%
+    )
+    ```
+    - Reference: processing all arguments but first in Windows batch script: https://stackoverflow.com/a/26732879/23209096
+
 # TODO
 - setup alias file for MacOS: setup `ps aux | head -n1; ps aux | grep -E '<name>|<PID>'`
