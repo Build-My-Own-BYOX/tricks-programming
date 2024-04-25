@@ -18,3 +18,6 @@
 
 - References: 
     - content of `refreshenv.cmd`: https://github.com/chocolatey/choco/blob/master/src/chocolatey.resources/redirects/RefreshEnv.cmd
+
+## Get environment variables of a process
+- For Windows, `Get-Process | Where-Object { $_.ProcessName -like "*$imageName*" }` could be used to find the process info. Then use `[System.Environment]::GetEnvironmentVariables([System.EnvironmentVariableTarget]::Process)` to extract the env. The completed script can be found in [here](./scripts/get_env.ps1)
